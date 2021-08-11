@@ -1,13 +1,19 @@
 package geometria;
 
+import exception.RettangoloException;
+
 public class Rettangolo extends Figura {
 	
 	private double base;
 	private double altezza;
 	
 	public Rettangolo(double base, double altezza) {
-		this.base = base;
-		this.altezza = altezza;
+		if(base > 0 && altezza > 0) {
+			this.base = base;
+			this.altezza = altezza;
+		} else {
+			throw new RettangoloException("La base e l'altezza devono essere superiori a 0");
+		}
 	}
 	
 	public double getBase() {
