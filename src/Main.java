@@ -19,7 +19,7 @@ public class Main {
 			System.out.println("Menu'");
 			System.out.println("1 - Inserire Rettangolo");
 			System.out.println("2 - Inserire Quadrato");
-			System.out.println("3 - Uscire");
+			System.out.println("0 - Uscire");
 			n = input.nextInt();
 			switch (n) {
 				case 1:
