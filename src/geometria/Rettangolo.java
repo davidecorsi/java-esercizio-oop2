@@ -1,6 +1,6 @@
 package geometria;
 
-import exception.RettangoloException;
+import exception.FiguraException;
 
 public class Rettangolo extends Figura {
 	
@@ -12,7 +12,7 @@ public class Rettangolo extends Figura {
 			this.base = base;
 			this.altezza = altezza;
 		} else {
-			throw new RettangoloException("La base e l'altezza devono essere superiori a 0");
+			throw new FiguraException("I lati devono essere superiori a 0");
 		}
 	}
 	
